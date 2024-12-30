@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+    <div>
+        <!-- This dynamically loads the current page based on the route -->
+        <NuxtPage />
+    </div>
 </template>
