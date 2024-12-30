@@ -7,7 +7,7 @@ export default {
 
 <template>
     <section id="about" class="mb-16">
-        <h2 class="text-teal-300 text-3xl font-bold">About Me</h2>
+        <h2 class="section-heading">About</h2>
         <p class="mt-4">
             I’m a developer passionate about creating efficient, scalable, and user-friendly applications.
             My strengths lie in designing maintainable systems, collaborating with teams, and crafting

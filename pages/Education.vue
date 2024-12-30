@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section id="education" class="mb-16">
-        <h2 class="text-teal-300 text-3xl font-bold">Education</h2>
+        <h2 class="section-heading">Education</h2>
         <ul class="mt-4 space-y-8">
             <li class="bg-slate-800 p-4 rounded-md">
                 <h3 class="text-slate-200 font-bold">University 1</h3>

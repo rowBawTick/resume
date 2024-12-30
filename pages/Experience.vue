@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section id="experience" class="mb-16">
-        <h2 class="text-teal-300 text-3xl font-bold">Experience</h2>
+        <h2 class="section-heading">Experience</h2>
         <ul class="mt-4 space-y-8">
             <li>
                 <h3 class="text-slate-200 font-bold">Senior Frontend Engineer</h3>
