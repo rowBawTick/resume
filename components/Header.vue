@@ -13,6 +13,7 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
                 engineering. With over 6 years of professional experience, I love to help businesses grow by
                 building efficient, scalable, and user-friendly applications that align with the needs of customers.
             </p>
+            <!-- Hide navigation on mobile -->
             <nav class="hidden lg:flex mt-12">
                 <ul class="space-y-4">
                     <NavLink href="#about" text="About" />
