@@ -4,10 +4,27 @@ import About from "~/pages/About.vue";
 import Experience from "~/pages/Experience.vue";
 import Education from "~/pages/Education.vue";
 import Projects from "~/pages/Projects.vue";
+import {onMounted, onUnmounted} from "vue";
+
+const updateCursor = (e: MouseEvent) => {
+    const spotlight = document.getElementById('spotlight');
+    if (!spotlight) return;
+    spotlight.style.left = `${e.clientX}px`;
+    spotlight.style.top = `${e.clientY}px`;
+}
+
+onMounted(() => {
+    document.addEventListener('mousemove', updateCursor);
+
+    onUnmounted(() => {
+        document.removeEventListener('mousemove', updateCursor);
+    });
+});
 </script>
 
 <template>
     <div class="lg:flex min-h-screen bg-slate-900 text-slate-400">
+        <div id="spotlight"></div>
         <!-- Header (Left side on full screen) -->
         <div class="lg:w-1/2 lg:fixed px-6 py-12 overflow-y-auto">
             <Header />
@@ -27,4 +44,16 @@ import Projects from "~/pages/Projects.vue";
     </div>
 </template>
 
+<style>
+#spotlight {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+</style>
 
