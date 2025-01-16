@@ -6,20 +6,26 @@ import Education from "~/pages/Education.vue";
 import Projects from "~/pages/Projects.vue";
 import {onMounted, onUnmounted} from "vue";
 
-const updateCursor = (e: MouseEvent) => {
-    const spotlight = document.getElementById('spotlight');
-    if (!spotlight) return;
-    spotlight.style.left = `${e.clientX}px`;
-    spotlight.style.top = `${e.clientY}px`;
-}
+const moveSpotlight = (e: MouseEvent) => {
+    const spot = document.getElementById('spotlight');
+    if (!spot) return;
+    spot.style.background = `radial-gradient(
+      circle 600px at ${e.clientX}px ${e.clientY}px,
+      rgba(29, 78, 216, 0.20) 0%,
+      rgba(29, 78, 216, 0.10) 40%,
+      rgba(29, 78, 216, 0.05) 60%,
+      rgba(29, 78, 216, 0) 100%
+    )`;
+
+};
 
 onMounted(() => {
-    document.addEventListener('mousemove', updateCursor);
-
+    window.addEventListener('mousemove', moveSpotlight);
     onUnmounted(() => {
-        document.removeEventListener('mousemove', updateCursor);
+        window.removeEventListener('mousemove', moveSpotlight);
     });
 });
+
 </script>
 
 <template>
@@ -44,36 +50,13 @@ onMounted(() => {
     </div>
 </template>
 
-<style>
+<style scoped>
 #spotlight {
     position: fixed;
-    width: 1600px;
-    height: 1600px;
-    border-radius: 50%;
-    background: radial-gradient(
-        circle at center,
-        rgba(46, 117, 163, 0.08) 5%,
-        rgba(35, 72, 97, 0.07) 15%,
-        rgba(29, 62, 94, 0.06) 25%,
-        rgba(18, 52, 78, 0.05) 35%,
-        rgba(11, 40, 68, 0.04) 45%,
-        rgba(5, 33, 50, 0.03) 55%,
-        transparent 80%
-    );
+    inset: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%);
     z-index: 9999;
-    mix-blend-mode: screen;
-}
-
-/* Add a subtle background glow */
-.bg-slate-700 {
-    position: relative;
-    background: radial-gradient(
-        circle at 50% 50%,
-        rgba(2, 12, 27, 0.98),
-        rgba(2, 12, 27, 1)
-    );
+    transition: background 0.3s ease; /* for smoothness */
 }
 </style>
 
