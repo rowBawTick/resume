@@ -5,7 +5,7 @@ const jobs = [
     {
         title: 'Software Engineer',
         company: 'Iterative Edge',
-        companyUrl: 'https://iterative-edge.co.uk',
+        companyUrl: 'https://iterative-edge.dev',
         dateRange: '2024 — Present',
         description: 'Currently freelancing for a small company building out AI infrastructure in the property technology sector. Working on a few other small projects in parallel.',
         skills: ['PHP', 'Laravel', 'Nova', 'JavaScript', 'Vue.js']
@@ -21,10 +21,42 @@ const jobs = [
     {
         title: 'Junior Software Developer',
         company: 'Gigabyte Software',
-        companyUrl: 'https://www.gigabytesoft.co.uk',
+        companyUrl: 'https://www.gigabyte.software',
         dateRange: '2018 — 2021',
         description: 'Worked with stakeholders to enhance a bespoke enterprise system, addressing issues and adding new features. Supported greenfield projects, facilitated team communication as a part-time scrum master, and improved workflow through sprint planning and retrospectives.',
         skills: ['PHP', 'Symfony', 'JavaScript', 'Vue.js', 'MySQL']
+    },
+    {
+        title: 'Physics & Science Tutor',
+        company: 'Self-employed',
+        companyUrl: '#',
+        dateRange: '2018 — 2019',
+        description: 'Provided online tutoring in physics, science, and English while transitioning into software development. Developed fundamental programming skills through self-directed learning and practical projects.',
+        skills: ['Teaching', 'PHP', 'JavaScript', 'Python', 'MySQL']
+    },
+    {
+        title: 'Physics Teacher',
+        company: "St. Andrew's Scots School",
+        companyUrl: 'https://www1.sanandres.esc.edu.ar/Home/',
+        dateRange: '2017 — 2018',
+        description: 'Taught IB Physics and IGCSE science, while leading innovative learning initiatives including design thinking projects. Organized and led international educational trips, including a science project in Patagonia.',
+        skills: ['IB Physics', 'IGCSE']
+    },
+    {
+        title: 'Physics Teacher',
+        company: 'Preston Lodge High School',
+        companyUrl: 'https://www.prestonlodge.net',
+        dateRange: '2014 — 2016',
+        description: 'Led physics curriculum development and implemented innovative teaching methods through the Accelerated Learning Cycle. Ran multiple STEM clubs including young engineers and computing.',
+        skills: ['Curriculum for Excellence', 'Highers', 'Nationals']
+    },
+    {
+        title: 'Physics Teacher',
+        company: 'Fraserburgh Academy',
+        companyUrl: 'https://www.fraserburgh.aberdeenshire.sch.uk/',
+        dateRange: '2013 — 2014',
+        description: 'Developed and implemented new physics curriculum while representing the school at various educational bodies including SQA and IoP. Led student sports teams and teacher development initiatives.',
+        skills: ['Curriculum for Excellence', 'Highers', 'Nationals']
     }
 ];
 </script>

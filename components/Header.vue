@@ -9,9 +9,8 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
             <h1 class="text-slate-200 text-5xl font-bold">Chris Chambers</h1>
             <h2 class="text-slate-200 mt-2 text-xl font-medium">Software Engineer</h2>
             <p class="mt-4">
-                Former teacher of physics, science & English continuously learning the craft of software
-                engineering. With over 6 years of professional experience, I love to help businesses grow by
-                building efficient, scalable, and user-friendly applications that align with the needs of customers.
+                I love to help businesses grow by building efficient, scalable, and user-friendly applications that
+                align with the needs of customers.
             </p>
             <!-- Hide navigation on mobile -->
             <nav class="hidden lg:flex mt-12">
