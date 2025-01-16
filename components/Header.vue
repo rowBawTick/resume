@@ -21,18 +21,18 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
                     <NavLink href="#projects" text="Projects" />
                 </ul>
             </nav>
-            <div class="mt-8 flex space-x-4">
+            <div class="mt-8 flex space-x-6">
                 <a href="https://github.com/rowBawTick" target="_blank" rel="noopener noreferrer" class="hover:text-teal-300">
-                    <font-awesome-icon :icon="['fab', 'github']" class="text-xl" />
+                    <font-awesome-icon :icon="['fab', 'github']" class="text-3xl lg:text-2xl" />
                 </a>
                 <a href="https://www.linkedin.com/in/christopher-chambers-2403b912b" target="_blank" rel="noopener noreferrer" class="hover:text-teal-300">
-                    <font-awesome-icon icon="fa-brands fa-linkedin" class="text-xl" />
+                    <font-awesome-icon icon="fa-brands fa-linkedin" class="text-3xl lg:text-2xl" />
                 </a>
                 <a href="mailto:chris@iterative-edge.co.uk" class="hover:text-teal-300">
-                    <font-awesome-icon icon="fa-solid fa-envelope" class="text-xl" />
+                    <font-awesome-icon icon="fa-solid fa-envelope" class="text-3xl lg:text-2xl" />
                 </a>
                 <a href="https://www.google.co.uk/maps/place/Edinburgh/@55.9411885,-3.2753784" target="_blank" class="hover:text-teal-300">
-                    <font-awesome-icon icon="fa-solid fa-map-marker-alt" class="text-xl" />
+                    <font-awesome-icon icon="fa-solid fa-map-marker-alt" class="text-3xl lg:text-2xl" />
                 </a>
             </div>
         </div>
