@@ -47,13 +47,33 @@ onMounted(() => {
 <style>
 #spotlight {
     position: fixed;
-    width: 200px;
-    height: 200px;
+    width: 1600px;
+    height: 1600px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    background: radial-gradient(
+        circle at center,
+        rgba(46, 117, 163, 0.08) 5%,
+        rgba(35, 72, 97, 0.07) 15%,
+        rgba(29, 62, 94, 0.06) 25%,
+        rgba(18, 52, 78, 0.05) 35%,
+        rgba(11, 40, 68, 0.04) 45%,
+        rgba(5, 33, 50, 0.03) 55%,
+        transparent 80%
+    );
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 9999;
+    mix-blend-mode: screen;
+}
+
+/* Add a subtle background glow */
+.bg-slate-700 {
+    position: relative;
+    background: radial-gradient(
+        circle at 50% 50%,
+        rgba(2, 12, 27, 0.98),
+        rgba(2, 12, 27, 1)
+    );
 }
 </style>
 
