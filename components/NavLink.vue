@@ -21,7 +21,7 @@ onMounted(() => {
                 });
             },
             {
-                rootMargin: '-20% 0px -70% 0px' // Adjust these values to control when the section is considered "active"
+                rootMargin: '-20% 0px -30% 0px' // Adjust these values to control when the section is considered active
             }
         );
 
