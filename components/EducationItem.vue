@@ -28,30 +28,45 @@ defineProps({
 </script>
 
 <template>
-    <li class="bg-slate-800 p-4 rounded-md md:relative md:group">
-        <div class="hidden md:block absolute inset-0 bg-slate-800/0 hover-card-effect"></div>
-
+    <li>
         <a :href="website"
            target="_blank"
            rel="noopener noreferrer"
-           class="hidden md:absolute md:inset-0 md:block">
-            <span class="sr-only">View {{ name }} website</span>
-        </a>
-
-        <div class="relative">
-            <p class="text-slate-400 text-sm opacity-75 mb-2 group-hover:text-slate-300">{{ date }}</p>
-            <div>
-                <h3 v-if="degree" class="text-slate-200 font-bold mb-1 group-hover:text-slate-100">{{ degree }}</h3>
-                <div class="text-slate-200 font-bold group-hover:text-teal-300">
-                    {{ name }}
+           class="md:grid md:grid-cols-5 md:gap-4 block group md:p-4 hover-card-effect border border-transparent">
+            <p class="text-slate-400 text-sm opacity-75 mt-1 mb-2 md:mb-0">{{ date }}</p>
+            <div class="md:col-span-4">
+                <div class="flex flex-col gap-1">
+                    <h3 v-if="degree" class="text-slate-200 font-bold group-hover:text-teal-300">{{ degree }}</h3>
+                    <div class="text-slate-200 font-bold group-hover:text-teal-300 inline-flex items-center">
+                        {{ name }}
+                        <svg class="external-link-icon"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 20 20"
+                             fill="currentColor"
+                             aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <a :href="locationLink"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="text-slate-400 hover:text-teal-300 inline-flex items-center">
+                        <span class="mr-1">📍</span>{{ location }}
+                    </a>
                 </div>
-                <a :href="locationLink"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="text-slate-400 hover:text-teal-300 mt-1 inline-flex items-center relative z-10">
-                    <span class="mr-1">📍</span>{{ location }}
-                </a>
             </div>
-        </div>
+        </a>
     </li>
-</template> 
+</template>
+
+<style scoped>
+.external-link-icon {
+    @apply inline-block h-4 w-4 shrink-0 transition-transform ml-1 translate-y-px text-slate-200;
+}
+
+.group:hover .external-link-icon {
+    @apply text-teal-300 -translate-y-1 translate-x-1;
+}
+</style> 
