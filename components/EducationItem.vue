@@ -28,7 +28,7 @@ defineProps({
 </script>
 
 <template>
-    <li>
+    <li class="md:-ml-4">
         <a :href="website"
            target="_blank"
            rel="noopener noreferrer"
