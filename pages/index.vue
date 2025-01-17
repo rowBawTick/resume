@@ -32,7 +32,7 @@ onMounted(() => {
     <div class="lg:flex min-h-screen bg-slate-900 text-slate-400">
         <div id="spotlight"></div>
         <!-- Header (Left side on full screen) -->
-        <div class="lg:w-1/2 lg:fixed px-6 py-12 overflow-y-auto">
+        <div class="lg:w-1/2 lg:fixed px-6 py-12 overflow-y-auto h-screen">
             <Header />
         </div>
 
@@ -50,7 +50,12 @@ onMounted(() => {
     </div>
 </template>
 
-<style scoped>
+<style>
+/* Apply background color globally */
+html, body {
+    background-color: rgb(17, 26, 48); /* matches bg-slate-900 */
+}
+
 #spotlight {
     position: fixed;
     inset: 0;
