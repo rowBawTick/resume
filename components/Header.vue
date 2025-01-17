@@ -4,8 +4,8 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 </script>
 
 <template>
-    <header class="flex flex-col justify-between">
-        <div>
+    <header class="flex flex-col justify-between h-full">
+        <div class="lg:mx-auto lg:w-[60%] lg:flex lg:flex-col lg:justify-center lg:h-full">
             <h1 class="text-slate-200 text-5xl font-bold">Chris Chambers</h1>
             <h2 class="text-slate-200 mt-2 text-xl font-medium">Software Engineer</h2>
             <p class="mt-4">
@@ -13,11 +13,11 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
                 align with the needs of customers.
             </p>
             <!-- Hide navigation on mobile -->
-            <nav class="hidden lg:flex mt-12">
+            <nav class="hidden lg:block mt-12">
                 <ul class="space-y-4">
                     <NavLink href="#about" text="About" />
                     <NavLink href="#experience" text="Experience" />
-                    <NavLink href="#projects" text="Projects" />
+                    <NavLink href="#education" text="Education" />
                 </ul>
             </nav>
             <div class="mt-8 flex space-x-6">
