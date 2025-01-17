@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .hover-card-effect {
+        @apply lg:rounded-md lg:hover:bg-slate-700/60 lg:hover:border lg:hover:border-slate-100/5;
+    }
+}
