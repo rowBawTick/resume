@@ -32,7 +32,7 @@ defineProps({
         <a :href="companyUrl" 
            target="_blank" 
            rel="noopener noreferrer"
-           class="md:grid md:grid-cols-5 md:gap-4 block group hover-card-effect md:p-4">
+           class="md:grid md:grid-cols-5 md:gap-4 block group md:p-4 hover-card-effect">
             <p class="text-slate-400 text-sm opacity-75 mt-1 mb-2 md:mb-0">{{ dateRange }}</p>
             <div class="md:col-span-4">
                 <div class="text-slate-200 font-bold group-hover:text-teal-300 inline-flex items-center">
