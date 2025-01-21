@@ -3,6 +3,14 @@ import EducationItem from '~/components/EducationItem.vue';
 
 const schools = [
     {
+        date: '2012 — 2013',
+        name: 'University of Edinburgh',
+        website: 'https://www.ed.ac.uk/',
+        location: 'Edinburgh',
+        locationLink: 'https://www.google.co.uk/maps/place/Edinburgh/@55.9411885,-3.2753782',
+        degree: 'Professional Graduate Diploma in Education - Physics'
+    },
+    {
         date: '2010 — 2012',
         name: 'Utrecht University',
         website: 'https://www.uu.nl/en/research/physics-and-astronomy',
@@ -17,7 +25,7 @@ const schools = [
         location: 'Edinburgh',
         locationLink: 'https://www.google.co.uk/maps/place/Edinburgh/@55.9411885,-3.2753782',
         degree: 'BSc with Hons in Astrophysics'
-    }
+    },
 ];
 </script>
 
