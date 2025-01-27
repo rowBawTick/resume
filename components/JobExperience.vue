@@ -1,13 +1,20 @@
 <script setup lang="ts">
 import ExternalLinkIcon from './DiagonalArrowIcon.vue';
-import type { Job } from '~/constants/experience';
 
-defineProps<Job>();
+defineProps<{
+  title: string;
+  company: string;
+  companyUrl: string;
+  dateRange: string;
+  description: string;
+  skills: string[];
+}>();
+
 </script>
 
 <template>
     <li class="md:-ml-4">
-        <a :href="companyUrl" 
+        <a :href="companyUrl"
            target="_blank" 
            rel="noopener noreferrer"
            class="md:grid md:grid-cols-5 md:gap-4 block group md:p-4 hover-card-effect border border-transparent">

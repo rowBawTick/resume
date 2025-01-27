@@ -9,7 +9,6 @@ const props = defineProps({
 const isActive = ref(false);
 
 onMounted(() => {
-    // Get the target section element (remove the # from href)
     const targetId = props.href?.replace('#', '');
     const targetSection = document.getElementById(targetId || '');
     
@@ -21,7 +20,8 @@ onMounted(() => {
                 });
             },
             {
-                rootMargin: '-20% 0px -30% 0px' // Adjust these values to control when the section is considered active
+                // Adjust these values to control when the LHS navigation section is considered active
+                rootMargin: '-20% 0px -30% 0px'
             }
         );
 

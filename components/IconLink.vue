@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+
 interface Props {
   href: string
   icon: string[]

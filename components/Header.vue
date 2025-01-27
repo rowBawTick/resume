@@ -1,7 +1,6 @@
 <script setup>
 import NavLink from './NavLink.vue';
 import IconLink from './IconLink.vue';
-import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 
 const socialLinks = [
     { href: 'https://github.com/rowBawTick', icon: ['fab', 'github'] },
