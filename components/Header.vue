@@ -1,6 +1,17 @@
 <script setup>
 import NavLink from './NavLink.vue';
+import IconLink from './IconLink.vue';
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+
+const socialLinks = [
+    { href: 'https://github.com/rowBawTick', icon: ['fab', 'github'] },
+    { href: 'https://www.linkedin.com/in/christopher-chambers-2403b912b', icon: ['fab', 'linkedin'] },
+    { href: 'mailto:chris@iterative-edge.dev', icon: ['fa-solid', 'envelope'] },
+    {
+        href: 'https://www.google.co.uk/maps/place/Edinburgh/@55.9411885,-3.2753784',
+        icon: ['fa-solid', 'map-marker-alt']
+    },
+];
 </script>
 
 <template>
@@ -21,20 +32,11 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
                 </ul>
             </nav>
             <div class="mt-8 flex space-x-6">
-                <a href="https://github.com/rowBawTick" target="_blank" rel="noopener noreferrer" class="hover:text-teal-300">
-                    <font-awesome-icon :icon="['fab', 'github']" class="text-3xl lg:text-2xl" />
-                </a>
-                <a href="https://www.linkedin.com/in/christopher-chambers-2403b912b" target="_blank" rel="noopener noreferrer" class="hover:text-teal-300">
-                    <font-awesome-icon icon="fa-brands fa-linkedin" class="text-3xl lg:text-2xl" />
-                </a>
-                <a href="mailto:chris@iterative-edge.dev" class="hover:text-teal-300">
-                    <font-awesome-icon icon="fa-solid fa-envelope" class="text-3xl lg:text-2xl" />
-                </a>
-                <a href="https://www.google.co.uk/maps/place/Edinburgh/@55.9411885,-3.2753784" target="_blank" class="hover:text-teal-300">
-                    <font-awesome-icon icon="fa-solid fa-map-marker-alt" class="text-3xl lg:text-2xl" />
-                </a>
+                <IconLink v-for="link in socialLinks"
+                         :key="link.href"
+                         v-bind="link"
+                         :external="!link.href.startsWith('mailto:')" />
             </div>
         </div>
     </header>
 </template>
-

@@ -1,30 +1,8 @@
-<script setup>
-defineProps({
-    title: {
-        type: String,
-        required: true
-    },
-    company: {
-        type: String,
-        required: true
-    },
-    companyUrl: {
-        type: String,
-        required: true
-    },
-    dateRange: {
-        type: String,
-        required: true
-    },
-    description: {
-        type: String,
-        required: true
-    },
-    skills: {
-        type: Array,
-        default: () => []
-    }
-});
+<script setup lang="ts">
+import ExternalLinkIcon from './DiagonalArrowIcon.vue';
+import type { Job } from '~/constants/experience';
+
+defineProps<Job>();
 </script>
 
 <template>
@@ -37,15 +15,7 @@ defineProps({
             <div class="md:col-span-4">
                 <div class="text-slate-200 font-bold group-hover:text-teal-300 inline-flex items-center">
                     {{ title }} — <span class="inline-block">{{ company }}
-                        <svg class="external-link-icon"
-                             xmlns="http://www.w3.org/2000/svg"
-                             viewBox="0 0 20 20"
-                             fill="currentColor"
-                             aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                  clip-rule="evenodd"/>
-                        </svg>
+                        <ExternalLinkIcon />
                     </span>
                 </div>
                 <p class="mt-2 group-hover:text-slate-300">{{ description }}</p>
@@ -69,4 +39,4 @@ defineProps({
 .group:hover .external-link-icon {
     @apply text-teal-300 -translate-y-1 translate-x-1;
 }
-</style> 
+</style>

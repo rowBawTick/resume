@@ -3,7 +3,6 @@
 import About from "~/pages/About.vue";
 import Experience from "~/pages/Experience.vue";
 import Education from "~/pages/Education.vue";
-import Projects from "~/pages/Projects.vue";
 import {onMounted, onUnmounted} from "vue";
 
 const moveSpotlight = (e: MouseEvent) => {
