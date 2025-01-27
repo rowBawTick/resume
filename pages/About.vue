@@ -1,5 +1,4 @@
 <script>
-import WordAnimation from '~/components/WordAnimation.vue';
 export default {
     name: 'About'
 }
