@@ -5,7 +5,7 @@ import IconLink from './IconLink.vue';
 const socialLinks = [
     { href: 'https://github.com/rowBawTick', icon: ['fab', 'github'] },
     { href: 'https://www.linkedin.com/in/christopher-chambers-2403b912b', icon: ['fab', 'linkedin'] },
-    { href: 'mailto:chris@iterative-edge.dev', icon: ['fa-solid', 'envelope'] },
+    { href: 'mailto:christopher.chambers@live.co.uk', icon: ['fa-solid', 'envelope'] },
     {
         href: 'https://www.google.co.uk/maps/place/Edinburgh/@55.9411885,-3.2753784',
         icon: ['fa-solid', 'map-marker-alt']
