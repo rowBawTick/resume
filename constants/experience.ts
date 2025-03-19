@@ -29,7 +29,7 @@ export const jobs: Job[] = [
       'safeguard sensitive data, ensuring industry compliance.',
     skills: [
       'PHP', 'Laravel', 'PHPUnit', 'JavaScript', 'Vue.js', 'Python', 'Django', 'Cypress', 'SASS', 'TailwindCSS', 'AWS',
-      'Docker', 'CI/CD', 'Elementor', 'WordPress'
+      'Docker', 'CI/CD', 'ElasticSearch', 'Elementor', 'WordPress'
     ]
   },
   {
