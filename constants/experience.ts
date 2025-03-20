@@ -40,7 +40,7 @@ export const jobs: Job[] = [
     description: 'Worked with stakeholders to enhance a bespoke enterprise system, maintained & improved legacy code,' +
       ' fixed bugs and added new features. Prototyped multiple greenfield projects. Facilitated team communication ' +
       'as a part-time scrum master, and improved workflow through sprint planning and retrospectives.',
-    skills: ['PHP', 'Symfony', 'PHPUnit', 'JavaScript', 'Vue.js', 'MySQL', 'HTML', 'CSS', 'DDD']
+    skills: ['PHP', 'Symfony', 'PHPUnit', 'JavaScript', 'Vue.js', 'Nuxt', 'MySQL', 'HTML', 'CSS', 'DDD']
   },
   {
     title: 'Physics & Science Tutor',
